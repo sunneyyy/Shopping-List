@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="main.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="index">
+<div data-role="header" align=center>
+<img src="img/title.png">
+</div>
+
+<div data-role="main" class="ui-content">
+<h2>Weekly Shopping List</h2>	
+<div id="weekdays">
+<a href="#ShoppingList" class="ui-btn">Sunday</a>
+<a href="#ShoppingList" class="ui-btn">Monday</a> 
+<a href="#ShoppingList" class="ui-btn">Tuesday</a> 
+<a href="#ShoppingList" class="ui-btn">Wednesday</a>
+<a href="#ShoppingList" class="ui-btn">Thursday</a>
+<a href="#ShoppingList" class="ui-btn">Friday</a>
+<a href="#ShoppingList" class="ui-btn">Saturday</a>
+</div>
+</div>
+</div> 
+
+<div>
+<div data-role="navbar">
+<ul>
+<li><a href="#index" data-icon="arrow-l"></a></li>
+</ul>
+</div>
+</div>
+
+<div data-role="page" id="ShoppingList">
+<div data-role="header" align=center>
+<img src="img/title1.png">
+</div>
+
+<div>
+<div data-role="navbar">
+<ul>
+<li><a href="#index" data-icon="home"></a></li>
+<li><a href="#Prelist" data-icon="bars"></a></li>
+</ul>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div class="input">
+<input type="text" class="custinput" id="item-input" placeholder="Enter shopping item e.g. Banana 5" autofocus>
+<button type="submit" class="btn">Add to Shopping List</button>
+</div>
+<div class="list">
+<h3>List:</h3>
+<table class="items">
+<thead>
+<tr>
+<th class="edit" colspan="3"><span>Remove from List (x)</span></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>	
+</div>
+</div>
+
+
+
+</body>
+</html>
+
